@@ -1,5 +1,3 @@
-import argparse
-
 from server import Server
 from config import Config
 
@@ -10,3 +8,4 @@ if __name__ == '__main__':
 
     server = Server(4, '', config.address_port, config.receive_data_size, config.queue)
     server.start()
+    

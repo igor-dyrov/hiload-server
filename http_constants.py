@@ -29,5 +29,5 @@ CONTENT_TYPES = {
 
 
 ALLOWED_METHODS = ('GET', 'HEAD')
-SERVER = 'PythonPreforkHttpServer'
+SERVER = 'PythonServer'
 HTTP_VERSION = 'HTTP/1.1'
