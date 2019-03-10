@@ -31,7 +31,7 @@ class Server:
 
         filepath = self.root + request.path
         filepath = os.path.normpath(filepath)
-        filepath = '/server/' + filepath
+        filepath = '/server' + filepath
         logger.info(filepath)
         if not os.path.exists(filepath):
             return Response(HTTP_VERSION, StatusCode.NOT_FOUND)

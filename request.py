@@ -1,10 +1,15 @@
 from urllib.parse import unquote
+from response import Response
+from logger import Logger
+
+logger = Logger().logger
 
 
 class Request:
     def __init__(self, raw_request):
         self.request = raw_request.decode('utf-8')
         listed_request = self.request.split(' ')
+        logger.info(listed_request)
         if len(listed_request) < 3:
             self.valid = False
         else:
